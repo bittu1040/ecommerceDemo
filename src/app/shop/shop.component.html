@@ -1,0 +1,28 @@
+<h1> Hello {{userName}}</h1>
+
+
+
+<button type="button" (click)="cart()">  <b> your cart {{cartNumber || 0}}</b></button>
+
+ <div class= "card"> 
+    <div class="card-body">
+       <div *ngFor ="let product1 of products">
+          <br/>
+        
+            <img src= {{product1.img}} alt="product image" style="width:128px; height:128px;">
+            <h1> Book Name = {{product1.bookName}}  </h1>   
+         <h2> price= {{product1.price}}</h2>  <br/> 
+         <input type="button"  (click)= "additemcart(product1)" value="Add to cart"  /> <br/> <br/> <br/> <br/>
+        <!-- <input type="button" (click)="removeItemCart()" value= "Remove from cart" />  <br/> <br/> <br/> <br/> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div *ngIf="condition"></div> -->
+<!-- <button (click)= "checkOut()" > get value</button> -->
+
+
+

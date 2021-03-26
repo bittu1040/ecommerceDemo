@@ -1,0 +1,18 @@
+<p>cart works!</p>
+<button type="button"  (click)="checkOut()"> <b>Checkout  </b></button> 
+<p> total cost {{totalCost}}</p>
+<p> total item {{cartNumber}}</p>
+<div *ngFor ="let product2 of cartItem">
+    <br/>
+  
+      <img src= {{product2.img}} alt="product image" style="width:128px; height:128px;">
+      <button type="button" (click)="removeItemCart(product2)" > Remove</button>
+      <h1> quantity {{product2.quantity}}</h1>
+      <h1> Book Name = {{product2.bookName}}  </h1>   
+   <h2> price= {{product2.price}}</h2>  <br/> 
+  </div>
+
+
+
+
+

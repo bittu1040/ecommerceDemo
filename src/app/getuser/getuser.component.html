@@ -1,0 +1,18 @@
+<p align="center">
+    <input type="button" (click)= "btnClick()" value="component 1 to check services" />
+   
+  </p>
+
+  <div class= "card"> 
+      <div class="card-body">
+         <div *ngFor ="let product of products">
+              Product Name {{product.name}}
+              product id {{product.id}}
+          </div>
+          
+      </div>
+  </div>
+
+
+
+
